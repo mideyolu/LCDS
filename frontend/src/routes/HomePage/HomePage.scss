@@ -1,0 +1,115 @@
+@import "../../responsive.scss";
+
+.homePage {
+  display: flex;
+  height: 100%;
+
+  .textContainer {
+    flex: 3;
+
+    .wrapper {
+      padding-right: 100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 50px;
+      height: 100%;
+
+      @include lg {
+        padding-right: 50px;
+      }
+
+      @include md {
+        padding: 0;
+      }
+
+      @include sm {
+        justify-content: flex-start;
+      }
+
+      .title {
+        padding: 0.3rem;
+        @include md {
+          margin-top: 0;
+        }
+
+        @include sm {
+          margin-top: 8rem;
+        }
+        h3 {
+          font-weight: 700;
+          font-size: 2.5rem;
+
+          @include md {
+            font-size: 3rem;
+          }
+          @include sm {
+            font-size: 2.5rem;
+          }
+        }
+        .sub-text {
+          display: block;
+          margin: 0.4rem 0;
+          color: #fece5178;
+
+          @include sm {
+            font-size: 1.8rem;
+          }
+        }
+
+        .text {
+          font-size: 0.7rem;
+          margin: 0.9rem 0;
+
+          @include sm {
+            font-size: 0.9rem;
+          }
+        }
+
+        .btn {
+          margin: 0.4rem 0;
+          cursor: pointer;
+          padding: 1.03rem 1.05rem;
+          background-color: #fff;
+          border: 3px solid #fece51;
+          width: 150px;
+          text-align: center;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          transition: 1s all ease-in-out;
+
+          span {
+            margin-top: 0.09rem;
+            margin-left: 0.19rem;
+          }
+
+          &:hover {
+            scale: 1.03;
+          }
+        }
+      }
+    }
+  }
+
+  .imgContainer {
+    flex: 2;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    @include md {
+      display: none;
+    }
+
+    img {
+      width: 115%;
+      position: absolute;
+      right: 0;
+
+      @include lg {
+        width: 105%;
+      }
+    }
+  }
+}

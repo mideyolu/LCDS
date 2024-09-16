@@ -1,0 +1,129 @@
+@import "../../responsive.scss";
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+
+  a {
+    transition: all 0.4s ease;
+    font-size: 0.95rem;
+
+    @include sm {
+      display: none;
+    }
+
+    &:hover {
+      scale: 1.05;
+    }
+  }
+
+  .left {
+    flex: 3;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    .logo {
+      font-weight: bold;
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      img {
+        width: 60px;
+        border-radius: 12px;
+      }
+
+      span {
+        @include sm {
+          display: none;
+
+          img {
+            width: 50%;
+          }
+        }
+        @include sm {
+          display: initial;
+        }
+      }
+    }
+  }
+  .right {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #fff;
+    height: 100%;
+
+    @include md {
+      background-color: transparent;
+    }
+
+    a {
+      padding: 1.03rem 0.875rem;
+      margin: 20px;
+    }
+
+    .register {
+      background-color: #fece51;
+      width: 130px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+
+      @include sm {
+        display: none;
+      }
+
+      span {
+        margin-top: 0.09rem;
+        margin-left: 0.19rem;
+      }
+    }
+    .menuIcon {
+      display: none;
+      z-index: 10;
+
+      img {
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
+      }
+
+      @include sm {
+        display: inline;
+      }
+    }
+
+    .menu {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: black;
+      color: white;
+      height: 100vh;
+      width: 50%;
+      transition: all 1s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transform: translateY(-100%);
+      justify-content: center;
+      font-size: 24px;
+
+      &.active {
+        transition: 0.4s ease-in;
+        transform: translateY(0%);
+      }
+
+      @include sm {
+        a {
+          display: initial;
+        }
+      }
+    }
+  }
+}
