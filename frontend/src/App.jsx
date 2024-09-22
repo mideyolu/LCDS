@@ -1,24 +1,13 @@
+import Footer from './components/Footer/Footer'
 import Navbar from './components/Navbar/Navbar'
 import './layout.scss'
+import AboutPage from './routes/AboutPage/AboutPage'
 import HomePage from './routes/HomePage/HomePage'
-import {createBrowserRouter, Link, RouterProvider} from 'react-router-dom'
-import ListPage from './routes/ListPage/ListPage'
+import {Routes, Route, Link, RouterProvider} from 'react-router-dom'
+
 const App= ()=> {
 
-  const router = createBrowserRouter([
-    {
-      path: '/',
-      element: (
-         <HomePage/>
-      ),
-    },
-    {
-      path: '/list',
-      element: (
-        <ListPage/>
-      ),
-    },
-  ])
+
   return (
     <div className="layout">
       <div className="navbar">
@@ -26,11 +15,16 @@ const App= ()=> {
       </div>
 
       <div className="content">
-        <RouterProvider router={router}/>
+        <Routes>
+          <Route index path="/" element={<HomePage />} />
+          <Route index path="/about" element={<AboutPage />} />
+        </Routes>
+      </div>
+
+      <div className="">
+        <Footer/>
       </div>
     </div>
-
-   
   );
 }
 

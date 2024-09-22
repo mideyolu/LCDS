@@ -8,6 +8,7 @@
   padding-right: 20px;
   display: flex;
   flex-direction: column;
+  overflow-y: scroll;
 
   @include lg {
    // background-color: rgb(147, 61, 61);

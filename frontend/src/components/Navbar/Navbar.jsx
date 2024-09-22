@@ -15,17 +15,11 @@ const Navbar = () => {
         </a>
 
         <a href="/">Home</a>
-        <a href="/">About</a>
+        <a href="/about">About</a>
         <a href="/">FAQ</a>
-        <a href="/">Services</a>
+        <a href="/">Detection</a>
       </div>
       <div className="right">
-        <a href="/" className="register">
-          Try it Now
-          <span>
-            <FaArrowRight />
-          </span>
-        </a>
         <div className="menuIcon">
           <img
             src="/menu.png"
@@ -36,9 +30,9 @@ const Navbar = () => {
 
         <div className={open ? "menu active" : "menu"}>
           <a href="/">Home</a>
-          <a href="/">About</a>
+          <a href="/about">About</a>
           <a href="/">FAQ</a>
-          <a href="/">Services</a>
+          <a href="/">Detection</a>
         </div>
       </div>
     </nav>

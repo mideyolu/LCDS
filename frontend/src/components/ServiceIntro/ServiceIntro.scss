@@ -1,0 +1,23 @@
+@import "../../responsive.scss";
+.serviceIntro {
+  border: 1px solid;
+  padding: 0.4rem 0.2rem;
+  margin: 2rem 0 4rem;
+  height: 30%;
+
+  .gridContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+
+    @include sm {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    .item {
+      height: 40%;
+    }
+  }
+}
