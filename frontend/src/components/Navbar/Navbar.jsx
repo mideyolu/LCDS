@@ -16,8 +16,8 @@ const Navbar = () => {
 
         <a href="/">Home</a>
         <a href="/about">About</a>
-        <a href="/">FAQ</a>
         <a href="/">Detection</a>
+        <a href="/">FAQ</a>
       </div>
       <div className="right">
         <div className="menuIcon">
@@ -31,8 +31,8 @@ const Navbar = () => {
         <div className={open ? "menu active" : "menu"}>
           <a href="/">Home</a>
           <a href="/about">About</a>
+          <a href="/detect">Detection</a>
           <a href="/">FAQ</a>
-          <a href="/">Detection</a>
         </div>
       </div>
     </nav>

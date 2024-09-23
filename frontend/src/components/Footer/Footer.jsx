@@ -16,8 +16,8 @@ function Footer() {
             <a href="/about">About</a>
           </div>
           <div className="sub_col2">
-            <a href="/faq">FAQ</a>
             <a href="/detect">Detection</a>
+            <a href="/faq">FAQ</a>
           </div>
         </div>
       </div>

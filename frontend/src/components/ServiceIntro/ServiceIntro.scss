@@ -1,9 +1,19 @@
 @import "../../responsive.scss";
+
 .serviceIntro {
-  border: 1px solid;
-  padding: 0.4rem 0.2rem;
+  border: 1px solid #ddd;
+  padding: 1.5rem;
   margin: 2rem 0 4rem;
-  height: 30%;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  z-index: -1;
+
+  h4 {
+    margin-bottom: 3rem;
+    color: #034694;
+  }
 
   .gridContainer {
     display: grid;
@@ -12,12 +22,74 @@
     align-items: center;
     justify-content: center;
 
+    // Large screens (lg)
+    @include lg {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    // Medium screens (md)
+    @include md {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+    }
+
+    // Small screens (sm)
     @include sm {
       grid-template-columns: repeat(1, 1fr);
+      gap: 1.5rem;
     }
 
     .item {
-      height: 40%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem;
+      background-color: #fff;
+      border-radius: 8px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+      img {
+        margin-bottom: 1rem;
+        border-radius: 50%;
+        box-shadow: 0 3px 6px rgba(255, 255, 255);
+        transition: box-shadow 0.3s ease;
+      }
+
+      .caption {
+        color: #034694;
+        font-weight: 500;
+        margin-top: 0.5rem;
+        line-height: 1.5;
+        font-size: 1.1rem;
+        font-weight: bold;
+
+        .sub_caption {
+          display: block;
+          font-size: 0.85rem;
+          font-weight: 300;
+        }
+      }
+
+      &:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 12px rgba(255, 255, 255, 0.2);
+
+        img {
+          box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+        }
+      }
+    }
+
+    .item:nth-child(2){
+      .caption{
+        margin-top: 2.5rem;
+
+        @include sm{
+          margin-top: 0;
+        }
+      }
     }
   }
 }
+
