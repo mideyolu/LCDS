@@ -20,20 +20,20 @@ const Navbar = () => {
         <a href="/">FAQ</a>
       </div>
       <div className="right">
-        <div className="menuIcon">
+        {/* <div className="menuIcon">
           <img
             src="/menu.png"
             alt=""
             onClick={() => setOpen((prev) => !prev)}
           />
-        </div>
+        </div> */}
 
-        <div className={open ? "menu active" : "menu"}>
+        {/* <div className={open ? "menu active" : "menu"}>
           <a href="/">Home</a>
           <a href="/about">About</a>
           <a href="/detect">Detection</a>
           <a href="/">FAQ</a>
-        </div>
+        </div> */}
       </div>
     </nav>
   );

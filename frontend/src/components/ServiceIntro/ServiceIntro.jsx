@@ -8,7 +8,7 @@ function ServiceIntro() {
         <div className="item">
           <img src="/h2.png" width="150" alt="" />
           <p className="caption">
-            Form Filling
+            <h5>Form Filling</h5>
             <span className="sub_caption">
               Quickly input patient details with our streamlined form interface.
             </span>
@@ -17,7 +17,7 @@ function ServiceIntro() {
         <div className="item">
           <img src="/h4.png" width="150" alt="" />
           <p className="caption">
-            AI Image Analyzer
+            <h5>AI Image Analyzer</h5>
             <span className="sub_caption">
               Utilize advanced AI to analyze CT scan images for precise results.
             </span>
@@ -26,7 +26,7 @@ function ServiceIntro() {
         <div className="item">
           <img src="/h3.png" width="150" alt="" />
           <p className="caption">
-            Report Generation
+            <h5>Report Generation</h5>
             <span className="sub_caption">
               Receive comprehensive reports automatically generated from the
               analysis.
@@ -36,6 +36,9 @@ function ServiceIntro() {
       </div>
     </div>
   );
-}
+};
+
 
 export default ServiceIntro;
+
+

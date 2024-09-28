@@ -7,7 +7,6 @@ nav {
 
   a {
     transition: all 0.4s ease;
-    font-size: 0.95rem;
     color: #034694;
 
     @include sm {
@@ -27,7 +26,6 @@ nav {
 
     .logo {
       font-weight: bold;
-      font-size: 20px;
       display: flex;
       align-items: center;
       gap: 10px;
@@ -84,34 +82,35 @@ nav {
       }
     }
 
-    .menu {
-      position: absolute;
-      top: 0;
-      right: 0;
-      background-color: #034694;
-      color: white;
-      height: 100vh;
-      width: 35%;
-      transition: all 1s ease;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      transform: translateY(-100%);
-      justify-content: center;
-      font-size: 24px;
-      z-index: 10;
+    // .menu {
 
-      &.active {
-        transition: 0.4s ease-in;
-        transform: translateY(0%);
-      }
+    //   position: absolute;
+    //   top: 0;
+    //   right: 0;
+    //   background-color: #034694;
+    //   color: white;
+    //   height:100vh;
+    //   width: 35%;
+    //   transition: all 1s ease;
+    //   display: flex;
+    //   flex-direction: column;
+    //   align-items: center;
+    //   transform: translateY(-100%);
+    //   justify-content: center;
+    //   font-size: 24px;
+    //   z-index: 10;
 
-      @include sm {
-        a {
-          display: initial;
-          color: #fff;
-        }
-      }
-    }
+    //   &.active {
+    //     transition: 0.4s ease-in;
+    //     transform: translateY(0%);
+    //   }
+
+    //   @include sm {
+    //     a {
+    //       display: initial;
+    //       color: #fff;
+    //     }
+    //   }
+    // }
   }
 }

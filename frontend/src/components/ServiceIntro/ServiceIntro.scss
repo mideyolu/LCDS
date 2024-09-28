@@ -1,43 +1,31 @@
 @import "../../responsive.scss";
 
 .serviceIntro {
-  border: 1px solid #ddd;
+  margin-top: 2.5rem;
   padding: 1.5rem;
-  margin: 2rem 0 4rem;
-  background-color: #f9f9f9;
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  text-align: center;
   z-index: -1;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+
+  @include md{
+    flex-direction: column;
+    gap: 1rem;
+  }
 
   h4 {
-    margin-bottom: 3rem;
     color: #034694;
+    text-align: center;
   }
 
   .gridContainer {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
     align-items: center;
     justify-content: center;
-
-    // Large screens (lg)
-    @include lg {
-      grid-template-columns: repeat(3, 1fr);
-    }
-
-    // Medium screens (md)
-    @include md {
-      grid-template-columns: repeat(2, 1fr);
-      gap: 2rem;
-    }
-
-    // Small screens (sm)
-    @include sm {
-      grid-template-columns: repeat(1, 1fr);
-      gap: 1.5rem;
-    }
 
     .item {
       height: 100%;
@@ -52,28 +40,34 @@
       img {
         margin-bottom: 1rem;
         border-radius: 50%;
-        box-shadow: 0 3px 6px rgba(255, 255, 255);
+
         transition: box-shadow 0.3s ease;
       }
 
       .caption {
-        color: #034694;
         font-weight: 500;
         margin-top: 0.5rem;
         line-height: 1.5;
         font-size: 1.1rem;
         font-weight: bold;
+        color: #034694;
+
+        h5 {
+          font-size: 1.1rem;
+          text-align: center;
+        }
 
         .sub_caption {
           display: block;
-          font-size: 0.85rem;
+          font-size: 0.95rem;
           font-weight: 300;
+          text-align: center;
         }
       }
 
       &:hover {
         transform: translateY(-10px);
-        box-shadow: 0 8px 12px rgba(255, 255, 255, 0.2);
+        box-shadow: 10px 13px 16px rgba(0, 0, 0, 0.1);
 
         img {
           box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
@@ -81,15 +75,16 @@
       }
     }
 
-    .item:nth-child(2){
-      .caption{
+    .item:nth-child(2) {
+      .caption {
         margin-top: 2.5rem;
 
-        @include sm{
-          margin-top: 0;
+        @include sm {
+          margin-top: 2.5rem;
         }
       }
     }
   }
 }
+
 
