@@ -9,7 +9,7 @@ export const steps = [
     description:
       "Our Lung Cancer Detection System is implemented using the following key development tools",
     list: [
-      "TensorFlow - for building the deep learning models",
+      "TensorFlow - for building the deep learning model",
       "Keras - for high-level neural networks APIs",
       "OpenCV - for image preprocessing and augmentation",
       "FastApi - for creating the web server",

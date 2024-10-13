@@ -18,8 +18,8 @@ function HomePage() {
                 Streamline Lung Cancer Diagnosis with a platform powered by AI!
               </p>
               <a href="/" className="btn">
-                Try it Now
-                <span>
+                <h6>Try it Now</h6>
+                <span className="right-icon">
                   <FaArrowRight />
                 </span>
               </a>

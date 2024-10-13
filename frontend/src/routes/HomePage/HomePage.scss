@@ -3,8 +3,11 @@
 .Page {
   height: 100%;
   margin-top: 3rem;
-
-  @include lg {
+  
+  @include lg{
+    margin-top: 7rem;
+  }
+  @include md {
     margin-top: 5rem;
   }
 
@@ -63,16 +66,31 @@
             padding: 1.03rem 1.05rem;
             background-color: #fff;
             border: 3px solid #034694;
-            width: 150px;
+            width: 200px;
             text-align: center;
             display: flex;
             align-items: center;
             justify-content: flex-start;
             transition: 1s all ease-in-out;
 
+            @include sm{
+              width: 160px;
+            }
+
             span {
               margin-top: 0.09rem;
               margin-left: 0.19rem;
+              animation: topdown 1s infinite ease-in-out;
+            }
+
+            @keyframes topdown {
+              0%,
+              100% {
+                transform: translateY(0);
+              }
+              50% {
+                transform: translateY(-10px);
+              }
             }
 
             &:hover {

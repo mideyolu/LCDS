@@ -8,6 +8,7 @@
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
+  gap: 3rem;
   justify-content: space-between;
 
   @include md{
@@ -16,16 +17,16 @@
   }
 
   h4 {
-    color: #034694;
     text-align: center;
   }
 
   .gridContainer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 3rem;
+    gap: 5rem;
     align-items: center;
     justify-content: center;
+    margin-top: 2rem;
 
     .item {
       height: 100%;
@@ -53,15 +54,16 @@
         color: #034694;
 
         h5 {
-          font-size: 1.1rem;
           text-align: center;
         }
 
         .sub_caption {
           display: block;
           font-size: 0.95rem;
-          font-weight: 300;
+          font-weight: 400;
           text-align: center;
+          color: #000;
+          font-size: 16px;
         }
       }
 

@@ -16,24 +16,27 @@ const Navbar = () => {
 
         <a href="/">Home</a>
         <a href="/about">About</a>
-        <a href="/">Detection</a>
+        <a href="/detect">Detection</a>
         <a href="/">FAQ</a>
       </div>
       <div className="right">
-        {/* <div className="menuIcon">
+        <div className="right-wrapper">
+          <a href="/login">Login</a>
+        </div>
+        <div className="menuIcon">
           <img
             src="/menu.png"
             alt=""
             onClick={() => setOpen((prev) => !prev)}
           />
-        </div> */}
+        </div>
 
-        {/* <div className={open ? "menu active" : "menu"}>
+        <div className={open ? "menu active" : "menu"}>
           <a href="/">Home</a>
           <a href="/about">About</a>
           <a href="/detect">Detection</a>
           <a href="/">FAQ</a>
-        </div> */}
+        </div>
       </div>
     </nav>
   );
