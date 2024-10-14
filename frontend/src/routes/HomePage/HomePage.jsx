@@ -17,7 +17,7 @@ function HomePage() {
               <p className="text">
                 Streamline Lung Cancer Diagnosis with a platform powered by AI!
               </p>
-              <a href="/" className="btn">
+              <a href="/login" className="btn">
                 <h6>Try it Now</h6>
                 <span className="right-icon">
                   <FaArrowRight />

@@ -12,21 +12,21 @@
 a {
   text-decoration: none;
   color: inherit;
-  font-size: 1.1rem;
+  font-size: 16px;
 }
 
 h3 {
-  font-size: 50px;
+  font-size: 40px;
 }
 
 h5 {
-  font-size: 25px;
+  font-size: 20px;
 }
 h4 {
-  font-size: 30px;
+  font-size: 25px;
 }
 h6 {
-  font-size: 25px;
+  font-size: 20px;
 }
 p {
   font-size: 18px;
@@ -35,17 +35,19 @@ p {
 
 @include sm {
   h3 {
-    font-size: 40px;
+    font-size: 35px;
   }
 
   h5 {
-    font-size: 22px;
+    font-size: 18px;
   }
-  h4, h6 {
+  h4 {
     font-size: 20px;
   }
+ 
   p {
-    font-size: 17px;
+    font-size: 14px;
+    color: #000;
   }
 }
 

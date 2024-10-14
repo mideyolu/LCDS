@@ -2,11 +2,8 @@
 
 .Page {
   height: 100%;
-  margin-top: 3rem;
+  margin-top: 6rem;
   
-  @include lg{
-    margin-top: 7rem;
-  }
   @include md {
     margin-top: 5rem;
   }
@@ -66,17 +63,18 @@
             padding: 1.03rem 1.05rem;
             background-color: #fff;
             border: 3px solid #034694;
-            width: 200px;
+            width: 140px;
             text-align: center;
             display: flex;
             align-items: center;
             justify-content: flex-start;
             transition: 1s all ease-in-out;
 
-            @include sm{
-              width: 160px;
+            h6{
+              font-size: 16px;
             }
 
+         
             span {
               margin-top: 0.09rem;
               margin-left: 0.19rem;

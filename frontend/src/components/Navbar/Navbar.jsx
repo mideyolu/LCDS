@@ -21,7 +21,7 @@ const Navbar = () => {
       </div>
       <div className="right">
         <div className="right-wrapper">
-          <a href="/login">Login</a>
+          <a href="/login">Get Started</a>
         </div>
         <div className="menuIcon">
           <img
@@ -34,6 +34,7 @@ const Navbar = () => {
         <div className={open ? "menu active" : "menu"}>
           <a href="/">Home</a>
           <a href="/about">About</a>
+          <a href="/login">Get Started</a>
           <a href="/detect">Detection</a>
           <a href="/">FAQ</a>
         </div>

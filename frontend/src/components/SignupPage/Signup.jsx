@@ -8,7 +8,7 @@ function Signup() {
       <div className="container">
         <div className="main">
           <div className="content">
-            <h2>Signup</h2>
+            <h5>Signup</h5>
             <form action="#" method="post">
               <input
                 type="text"

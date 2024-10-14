@@ -11,9 +11,9 @@ function ServiceIntro() {
             <img src={step.img} width="150" alt="" />
             <div className="caption">
               <h5>{step.caption}</h5>
-              <span className="sub_caption">
+              <p className="sub_caption">
                 {step.desc}
-              </span>
+              </p>
             </div>
           </div>
         ))}

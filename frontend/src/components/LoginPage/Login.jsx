@@ -7,7 +7,7 @@ function Login() {
       <div className="container">
         <div className="main">
           <div className="content">
-            <h2>Login</h2>
+            <h5>Login</h5>
             <form action="#" method="post">
               <input
                 type="text"
