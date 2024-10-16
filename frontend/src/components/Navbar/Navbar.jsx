@@ -16,8 +16,7 @@ const Navbar = () => {
 
         <a href="/">Home</a>
         <a href="/about">About</a>
-        <a href="/detect">Detection</a>
-        <a href="/">FAQ</a>
+        <a href="/faq">FAQ</a>
       </div>
       <div className="right">
         <div className="right-wrapper">
@@ -35,8 +34,7 @@ const Navbar = () => {
           <a href="/">Home</a>
           <a href="/about">About</a>
           <a href="/login">Get Started</a>
-          <a href="/detect">Detection</a>
-          <a href="/">FAQ</a>
+          <a href="/faq">FAQ</a>
         </div>
       </div>
     </nav>

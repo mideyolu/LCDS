@@ -2,10 +2,11 @@ import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
 import "./layout.scss";
 import AboutPage from "./routes/AboutPage/AboutPage";
-import Login from "./components/LoginPage/Login";
-import Signup from './components/SignupPage/Signup'
+import Login from "./routes/LoginPage/Login";
+import Signup from "./routes/SignupPage/Signup";
 import DetectionPage from "./routes/DetectionPage/DetectionPage";
 import HomePage from "./routes/HomePage/HomePage";
+import Faq from "./routes/FAQ/Faq";
 import { Routes, Route, useLocation } from "react-router-dom";
 
 const App = () => {
@@ -22,10 +23,11 @@ const App = () => {
         <div className="content">
           <Routes>
             <Route index path="/" element={<HomePage />} />
-            <Route index path="/about" element={<AboutPage />} />
-            <Route index path="/detect" element={<DetectionPage />} />
-            <Route index path="/login" element={<Login />} />
-            <Route index path="/signup" element={<Signup />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/detect" element={<DetectionPage />} />
+            <Route path="/faq" element={<Faq />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/signup" element={<Signup />} />
           </Routes>
         </div>
 

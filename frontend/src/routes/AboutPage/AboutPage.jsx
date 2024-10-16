@@ -28,7 +28,7 @@ const AboutPage = () => {
         ))}
       </div>
 
-      <div>
+      <div className="team-layout">
         <h3>Our Team</h3>
         <Slider/>
       </div>
