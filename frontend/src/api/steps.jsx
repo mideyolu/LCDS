@@ -5,25 +5,17 @@ export const steps = [
       "Our Lung Cancer Detection System leverages advances in AI to assist medical professionals in detecting lung cancer from CT scans with greater precision and speed.",
   },
   {
-    title: "Technology Stack",
-    description:
-      "Our Lung Cancer Detection System is implemented using the following key development tools",
-    list: [
-      "TensorFlow - for building the deep learning model",
-      "Keras - for high-level neural networks APIs",
-      "OpenCV - for image preprocessing and augmentation",
-      "FastApi - for creating the web server",
-      "React - for building the frontend",
-    ],
-  },
-  {
     title: "Mission",
     description:
       "To harness AI technology for improving early detection and survival rates for lung cancer patients by providing:",
     list: [
-      "Efficient form-filling for quick input of patient details",
-      "Automatic generation of comprehensive reports based on analysis.",
-      "AI-driven analyzer for processing CT scan images",
+      "Machine Learning-Based Classification: Our software employs advanced machine learning algorithms to analyze CT scans and classify tumor with high accuracy.",
+      "Comprehensive Classification: The system accurately identifies Benign, Malignant tumors, and no tumors, aiding in precise diagnosis and treatment planning.",
+      "Data Management: Patient data and classification results are securely saved to the patient dashboard, ensuring easy access and continuity of care.",
+      "User-Friendly Interface: Health professionals can conveniently upload scans and access classification results through an intuitive dashboard.",
+      "Efficient Workflow: By automating the classification process, our software streamlines workflow for healthcare professionals, saving time and improving patient care",
     ],
   },
 ];
+
+

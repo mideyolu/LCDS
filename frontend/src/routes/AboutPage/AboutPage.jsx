@@ -1,6 +1,5 @@
 import "./AboutPage.scss";
-import {steps} from '../../api/steps'
-import Slider from "../../components/Slider/Slider";
+import { steps } from "../../api/steps";
 
 
 const AboutPage = () => {
@@ -26,11 +25,6 @@ const AboutPage = () => {
             <div className="circle"></div>
           </div>
         ))}
-      </div>
-
-      <div className="team-layout">
-        <h3>Our Team</h3>
-        <Slider/>
       </div>
     </div>
   );

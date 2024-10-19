@@ -3,7 +3,7 @@ from sqlalchemy.orm import Session
 from models import User
 from database import get_db
 from passlib.context import CryptContext
-from schemas import UserCreate, UserOut
+from schemas import UserCreate, UserOut, UserLogin
 
 router = APIRouter()
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
@@ -16,7 +16,7 @@ def hash_password(password: str):
 @router.post("/signup", response_model=UserOut)
 async def signup(user: UserCreate, db: Session = Depends(get_db)):
     hashed_password = hash_password(user.password)
-    db_user = User(username=user.username, password=hashed_password)
+    db_user = User(username=user.username, email= user.email, password=hashed_password)
     db.add(db_user)
     db.commit()
     db.refresh(db_user)
@@ -24,8 +24,12 @@ async def signup(user: UserCreate, db: Session = Depends(get_db)):
 
 # Authenticate user (without tokens)
 @router.post("/login")
-async def login(user: UserCreate, db: Session = Depends(get_db)):
+async def login(user: UserLogin, db: Session = Depends(get_db)):
     db_user = db.query(User).filter(User.username == user.username).first()
+    
+    # Check if the user exists and the password is correct
     if not db_user or not pwd_context.verify(user.password, db_user.password):
         raise HTTPException(status_code=400, detail="Incorrect username or password")
+    
+    # Return a success message and the username
     return {"message": "Login successful", "username": db_user.username}
