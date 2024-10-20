@@ -7,7 +7,7 @@ function ServiceIntro() {
       <h4>Built for Advanced AI-Driven Lung Cancer Detection</h4>
       <div className="gridContainer">
         {service.map((step, index) => (
-          <div className="item">
+          <div className="item" key={index}>
             <img src={step.img} width="150" alt="" />
             <div className="caption">
               <h5>{step.caption}</h5>

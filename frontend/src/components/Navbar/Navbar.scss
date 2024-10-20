@@ -7,12 +7,15 @@ nav {
 
   a {
     transition: all 0.4s ease;
+    font-size: 0.9rem;
+
     @include sm {
       display: none;
     }
 
     &:hover {
       scale: 1.05;
+      color: #034694;
     }
   }
 
@@ -46,7 +49,7 @@ nav {
           display: initial;
         }
 
-        span{
+        span {
           color: #000;
         }
       }
@@ -60,13 +63,13 @@ nav {
     background-color: #fff;
     height: 100%;
 
-    .right-wrapper{
-      background-color:#034694;
+    .right-wrapper {
+      background-color: #034694;
       padding: 0.9rem 0;
       color: #f4f4f4;
       border-radius: 0.2rem;
 
-      &:hover{
+      &:hover {
         scale: 1.05;
         transition: all 0.5s ease-in-out;
       }
@@ -84,7 +87,7 @@ nav {
     .menuIcon {
       display: none;
       z-index: 11;
-   
+
       img {
         width: 35px;
         height: 35px;
@@ -97,24 +100,22 @@ nav {
     }
 
     .menu {
-
       position: absolute;
       top: 0;
       right: 0;
-      //background-color: #034694;
-      height:100vh;
-      width: 40%;
-      transition: all 1s ease;
+      // background-color: #034694;
+      height: 100vh;
+      width: 35%;
       display: flex;
       flex-direction: column;
       align-items: center;
       transform: translateY(-100%);
+      transition: 0.4s ease-in;
       justify-content: center;
       font-size: 24px;
       z-index: 10;
 
       &.active {
-        transition: 0.4s ease-in;
         transform: translateY(0%);
       }
 

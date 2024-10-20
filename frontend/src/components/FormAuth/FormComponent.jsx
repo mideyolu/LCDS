@@ -12,5 +12,3 @@ const FormComponent = ({ children, imageSrc, altText }) => {
 };
 
 export default FormComponent;
-
-

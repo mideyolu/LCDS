@@ -3,6 +3,7 @@ import { signup as apiSignup } from "../../api/Api"; // Import the signup functi
 import FormComponent from "../../components/FormAuth/FormComponent";
 import { Link, useNavigate } from "react-router-dom";
 import Loader from "../../components/Loader/Loader"; // Import Loader component
+import { FaArrowLeft } from "react-icons/fa";
 
 const Signup = () => {
   const [username, setUsername] = useState("");
@@ -91,6 +92,11 @@ const Signup = () => {
           <p className="link">
             Have an account? <Link to={"/login"}>Login</Link>
           </p>
+
+          <Link className="back" to={"/"}>
+            {" "}
+            <FaArrowLeft className="icon" /> Back
+          </Link>
         </div>
       </form>
     </FormComponent>

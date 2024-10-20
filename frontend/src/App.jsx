@@ -47,8 +47,6 @@ const App = () => {
             <Route path="/signup" element={<Signup />} />
           </Routes>
         </div>
-
-        <div className="">{/* <Footer /> */}</div>
       </div>
     </div>
   );
